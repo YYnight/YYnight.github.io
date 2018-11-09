@@ -58,11 +58,14 @@ window.onload = function() {
 
     window.addEventListener('resize', function(e){
         var w = e.target;
-        var rightpane = document.getElementsByClassName("rightpane")[0];
-        var ac = document.getElementById("archive-content");
-        
+        var slider = this.document.getElementById("slider");
+        var mmenu = document.getElementById("mmenu");
         if(w.innerWidth > 840){
-            this.document.getElementById("slider").style.display = "block";
+            slider.style.display = "block";
+            mmenu.style.display = "open";
+        } else {
+            slider.style.display = "none";
+            mmenu.className = "";
         }
     })
 }
