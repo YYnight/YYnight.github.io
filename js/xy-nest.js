@@ -61,14 +61,8 @@ window.onload = function() {
         var rightpane = document.getElementsByClassName("rightpane")[0];
         var ac = document.getElementById("archive-content");
         
-        if(w.innerWidth < 840){
-            if(ac){
-                var ps = ac.getElementsByTagName("p")
-                this.console.log(ps)
-                for(let i = 0; i<ps.length; i++){
-                    // ps[i].textContent = beautySub(ps[i].textContent,50)
-                }
-            }
+        if(w.innerWidth > 840){
+            this.document.getElementById("slider").style.display = "block";
         }
     })
 }
